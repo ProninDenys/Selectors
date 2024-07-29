@@ -1,99 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Figma Selectors</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="">Home</a></li>
+          <li><a href="#about-me">About me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <title>Figma selectors</title>
-</head>
-
-<body>
-    <ul class="nav">
-        <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#about">About me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contacts">Contacts</a></li>
-    </ul>
-
-            <main>
-        <section>
-        <div>
-        
-              <p><h1>Denis Novik</h1></p>
+    <main>
+      <section>
+        <div class="content">
+          <h1>Denis Novik</h1>
+          <img class="img-DN" src="img/photox940.svg" alt="image Denis Novik" />
         </div>
-        
-        <div class="container">
-          <img src="img/photox940.svg" width="1060" height="400" alt="novik"> 
+      </section>
+
+      <section>
+        <div class="content">
+          <h2 id="about-me">About me</h2>
+          <p>
+            Hi, I'm Denis – UX/UI designer from Minsk. <br />I'm interested in
+            design and everything connected with it.
+          </p>
+          <p>
+            I'm studying at courses "Web and mobile design <br />interfaces" in
+            IT-Academy.
+          </p>
+          <p>
+            Ready to implement excellent projects <br />with wonderful people.
+          </p>
         </div>
-        </section>
-        
-        <section>
-        <h2>About me</h2>
+      </section>
 
-        <h5>Hi, I'm Denis – UX/UI designer from Minsk.
-            I'm interested in design and everything connected with it.</h5>
+      <section>
+        <div class="content">
+          <div class="skills">
+            <h2 id="skills">Skills</h2>
+            <p>I work in such programs as</p>
+          </div>
 
-            <h5>I'm studying at courses "Web and mobile design 
-                interfaces" in IT-Academy.</h5>
+          <ul class="list-skills">
+            <li>
+              <img src="img/Ps.svg" alt="Adobe Photoshop" />
+            </li>
+            <li>
+              <img src="img/Ai.svg" alt="Adobe Illustrator" />
+            </li>
+            <li>
+              <img src="img/AF.svg" alt="Adobe After Effects" />
+            </li>
+            <li>
+              <img src="img/Figma.svg" alt="Figma" />
+            </li>
+          </ul>
+        </div>
+      </section>
 
-                <h5>Ready to implement excellent projects
-                    with wonderful people.</h5>
-                </section>
-<br>
-<br>
-<br>
-<br>
-    <section>
-        <div class="container">
-            <img src="img/Pages.svg" alt="camera">
-        </div>     
-    </section>
-</main>
-</body>
+      <section>
+        <div class="content">
+          <h2 id="portfolio">Portfolio</h2>
+          <div class="container-portfolio">
+            <img src="img/Fashion-Store.svg" alt="fashion-store" />
+            <a href="" class="a-portfolio">Online fashion store - Homepage</a>
+          </div>
+          <div class="container-portfolio">
+            <img src="img/reebok_web.svg" alt="reebok" />
+            <a href="" class="a-portfolio">Reebok Store - Concept</a>
+          </div>
+          <div class="container-portfolio">
+            <img src="img/braun-landing.svg" alt="braun-landing" />
+            <a href="" class="a-portfolio">Braun Landing Page - Concept</a>
+          </div>
+        </div>
+      </section>
+    </main>
 
-    <br>
-    <br>
-    
-    <body>
-        <footer>
-            <h2>Contacts</h2>
-            <h5>Want to know more or just chat? 
-                You are welcome!</h5>
+    <footer>
+      <div class="content">
+        <div class="text-contacts">
+          <h2 id="contacts">Contacts</h2>
+          <p>Want to know more or just chat? <br />You are welcome!</p>
+        </div>
 
-                <div class="container">
-                    <img src="img/Links.svg" width="100" height="40" alt="Links"> 
-                  </div>
-                  <div class="social-media">
-                   <a href="#" class="social-link">LinkedIn</a> 
-                   <a href="#" class="social-link">Behance</a>
-                   <a href="#" class="social-link">Instagram</a>
-                   <a href="#" class="social-link">Dribble</a>
-                </div>
-                
-                  <h5>Like me on
-                    LinkedIn, Behance, Instagram,  Dribble</h5>
-        </footer>
-    </body>
-
+        <div class="cm">
+          <button>Send message</button>
+          <ul class="list-cm">
+            <li>
+              <a href=""><img src="img/linkedin.svg" alt="linkedin" /></a>
+            </li>
+            <li>
+              <a href=""><img src="img/instagram.svg" alt="instagram" /></a>
+            </li>
+            <li>
+              <a href=""><img src="img/behance.svg" alt="behance" /></a>
+            </li>
+            <li>
+              <a href=""><img src="img/dribbble.svg" alt="dribbble" /></a>
+            </li>
+          </ul>
+        </div>
+        <p class="p-last-m">
+          Like me on <br />LinkedIn, Instagram, Behance, <br />Dribble
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
